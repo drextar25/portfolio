@@ -1,0 +1,44 @@
+main {
+  margin: 1.5rem;
+  gap: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+main aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 0.3;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 0.7;
+  gap: 1.25rem;
+}
+
+section header img {
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  width: 99%;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: var(--purple);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  main aside,
+  main section {
+    flex: 1;
+  }
+}

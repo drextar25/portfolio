@@ -1,0 +1,17 @@
+#links {
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: var(--purple);
+}
+
+#links img {
+  height: 1.25rem;
+}
+
+#links img:hover {
+  transform: scale(1.5);
+}
+
+#links div {
+  padding: 0.5rem 1rem;
+}

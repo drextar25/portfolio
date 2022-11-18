@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/assets/images/pexels-lucas-george-wendt-4592706.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  padding: 0.9rem 0rem;
+}
+
+div,
+header {
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: var(--purple);
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
