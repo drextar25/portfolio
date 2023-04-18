@@ -1,0 +1,128 @@
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background:var(--dark-purple);
+    font-family: var(--font-mono);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    // border-bottom: 1px solid var(--light-green);
+}
+
+.links i{
+    font-size: 1.4rem;
+}
+
+.links i:hover{
+    color: var(--light-green);
+    transition: 0.5s ease;
+}
+
+.nav-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5.5rem;
+    align-items: center;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link{
+    --bs-nav-link-color:var(--base-white);
+    --bs-nav-link-hover-color:var(--light-green);
+    animation-name: fade-in;
+    animation-duration: 5s;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.nav-link.active{
+    text-decoration: underline var(--light-green);
+    transition: 0.5s ease;
+}
+
+#menu-resume{
+    color: var(--light-green);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--base-white);
+}
+
+
+@media(max-width: 920px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left:-100%;
+        top: 4rem;
+        gap:0;
+        flex-direction: column;
+        align-items: end;
+        background:var(--dark-purple);
+        text-align: end;
+        transition: 0.3s;
+        width: 100%;
+    }
+
+    .nav-link{
+        margin: 10px 10px;
+    }
+
+    .nav-menu.active{
+        left:0;
+        padding: 0 1.5rem;
+    }
+
+    .menu{
+        padding: 1rem 1.75rem;
+    }
+}
+
+
+
+
+
