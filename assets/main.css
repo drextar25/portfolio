@@ -558,6 +558,10 @@ header {
        object-fit: cover;
   }
 }
+.wsc {
+  width: 50%;
+}
+
 .contact-text {
   display: flex;
   align-self: flex-end;
